@@ -34,8 +34,7 @@ class CounterController extends Controller
             }
             $res = [
                 "code" => 0,
-                "data" =>  $count,
-                "errorMsg" => "查询成功123"
+                "data" =>  $count
             ];
             Log::info('getCount rsp: '.json_encode($res));
             return response()->json($res);
